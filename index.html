@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Quản lý sinh viên</h1>
+
+    <form id="studentForm">
+
+        <input
+            type="text"
+            id="student_code"
+            placeholder="Mã sinh viên"
+            required
+        >
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Họ và tên"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+        >
+
+        <input
+            type="text"
+            id="major"
+            placeholder="Ngành học"
+            required
+        >
+
+        <button type="submit">Thêm sinh viên</button>
+
+    </form>
+
+    <h2>Danh sách sinh viên</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Mã SV</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Ngành</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentList">
+        </tbody>
+    </table>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
